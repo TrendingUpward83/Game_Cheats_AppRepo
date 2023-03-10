@@ -4,16 +4,18 @@ using Game_Cheats_App.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace Game_Cheats_App.Data.Migrations
+namespace Game_Cheats_App.Migrations.GameCheatsDb
 {
     [DbContext(typeof(GameCheatsDbContext))]
-    partial class GameCheatsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230310195948_AddCheatDescr")]
+    partial class AddCheatDescr
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
