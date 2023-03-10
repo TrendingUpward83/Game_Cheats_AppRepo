@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\Game_Cheats_App.props" />
-</Project>
