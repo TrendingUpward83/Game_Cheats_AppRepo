@@ -16,7 +16,7 @@ namespace Game_Cheats_App.Models
         //views so....not sure what to do about that
         public int? GameId { get; set; }
         [ForeignKey("GameId")]
-        public Games Game { get; set; } //I hope I will be able to access/show Game properties by doing this...
+        public Games? Game { get; set; } //I hope I will be able to access/show Game properties by doing this...
 
     }
 }

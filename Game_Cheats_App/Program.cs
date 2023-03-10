@@ -15,7 +15,7 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 
-var conn = @"Server=tcp:csereptc.database.windows.net,1433;Initial Catalog=GameCheats;Persist Security Info=False;User ID=csereday;Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+var conn = @"Server=tcp:csereptc.database.windows.net,1433;Initial Catalog=GameCheats;Persist Security Info=False;User ID=csereday;Password=Bl@ndie#99;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 builder.Services.AddDbContext<GameCheatsDbContext>(options => options.UseSqlServer(conn));
 
 var app = builder.Build();
