@@ -57,7 +57,7 @@ namespace Game_Cheats_App.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("CheatId,CheatName,GameId")] Cheats cheats)
+        public async Task<IActionResult> Create([Bind("CheatId,CheatName,CheatDescription,GameId")] Cheats cheats)
         {
             if (ModelState.IsValid)
             {
@@ -91,7 +91,7 @@ namespace Game_Cheats_App.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("CheatId,CheatName,GameId")] Cheats cheats)
+        public async Task<IActionResult> Edit(int id, [Bind("CheatId,CheatName,CheatDescription,GameId")] Cheats cheats)
         {
             if (id != cheats.CheatId)
             {

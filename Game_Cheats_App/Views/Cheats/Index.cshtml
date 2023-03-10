@@ -17,6 +17,9 @@
                 @Html.DisplayNameFor(model => model.CheatName)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.CheatDescription)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Game)
             </th>
             <th></th>
@@ -27,6 +30,9 @@
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.CheatName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CheatDescription)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Game.GameId)
