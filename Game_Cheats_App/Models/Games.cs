@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 
@@ -8,6 +9,8 @@ namespace Game_Cheats_App.Models
     {
         [Key]
         public int GameId { get; set; }
+        [Required]
+        [DisplayName("Game Name")]
         public string? GameName { get; set; }
 
         //Relationships
@@ -23,6 +26,8 @@ namespace Game_Cheats_App.Models
 
 
         //Also is this overkill since the relationships are already set up? Can't I access this stuff later through the relationships?
+        [Required]
+        [DisplayName("Game Platform Id")]
         public int? PlatformId { get; set; }
 
         [ForeignKey("PlatformId")]
