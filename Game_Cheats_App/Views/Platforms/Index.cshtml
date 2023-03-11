@@ -10,7 +10,7 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
+<table class="table d-lg-table-cell table-striped table-bordered">
     <thead>
         <tr>
             <th>
@@ -26,9 +26,9 @@
                 @Html.DisplayFor(modelItem => item.PlatformName)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.PlatformId">Edit</a> |
+                <a asp-action="Edit" asp-route-id="@item.PlatformId" class="text-warning">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.PlatformId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.PlatformId">Delete</a>
+                <a asp-action="Delete" asp-route-id="@item.PlatformId" class="text-danger">Delete</a>
             </td>
         </tr>
 }

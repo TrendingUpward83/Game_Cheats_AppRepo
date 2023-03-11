@@ -10,8 +10,8 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
-    <thead>
+<table class="table d-lg-table-cell table-striped table-bordered">
+    <thead class="text-secondary">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.CheatName)
@@ -38,9 +38,9 @@
                 @Html.DisplayFor(modelItem => item.Game.GameId)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.CheatId">Edit</a> |
+                <a asp-action="Edit" asp-route-id="@item.CheatId" class="text-warning">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.CheatId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.CheatId">Delete</a>
+                <a asp-action="Delete" asp-route-id="@item.CheatId" class ="text-danger">Delete</a>
             </td>
         </tr>
 }
