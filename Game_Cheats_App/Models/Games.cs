@@ -9,7 +9,7 @@ namespace Game_Cheats_App.Models
     {
         [Key]
         public int GameId { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Please list the name of the game.")]
         [DisplayName("Game Name")]
         public string? GameName { get; set; }
 
@@ -26,7 +26,7 @@ namespace Game_Cheats_App.Models
 
 
         //Also is this overkill since the relationships are already set up? Can't I access this stuff later through the relationships?
-        [Required]
+        [Required(ErrorMessage = "Please include the platform for this game (create new entry for each alternate platform)")]
         [DisplayName("Game Platform Id")]
         public int? PlatformId { get; set; }
 

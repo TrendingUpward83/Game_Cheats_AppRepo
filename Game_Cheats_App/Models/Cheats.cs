@@ -8,10 +8,10 @@ namespace Game_Cheats_App.Models
     {
         [Key]
         public int CheatId { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Your cheat must have a name.")]
         [DisplayName("Cheat Name")]
         public string? CheatName { get; set; }
-        [Required]
+        [Required(ErrorMessage = "You cannot create a blank cheat!")]
         [DisplayName("Cheat actions/instructions")]
         public string? CheatDescription { get; set; }
 
@@ -20,7 +20,7 @@ namespace Game_Cheats_App.Models
 
         //Need foreign key for property Game so that each cheat has a unique Game(GameID)- but I don't want Id's to show in my
         //views so....not sure what to do about that
-        [Required]
+        [Required(ErrorMessage = "You must associate your cheat to a game")]
         [DisplayName("Game Id")]
         public int? GameId { get; set; }
         [ForeignKey("GameId")]
