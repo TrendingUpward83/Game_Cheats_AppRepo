@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Models",
-    "\\obj"
+    "\\Controllers"
   ],
-  "SelectedNode": "\\obj\\project.assets.json",
+  "SelectedNode": "\\Game_Cheats_App.sln",
   "PreviewInSolutionExplorer": false
 }

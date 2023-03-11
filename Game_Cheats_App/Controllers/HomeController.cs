@@ -15,7 +15,9 @@ namespace Game_Cheats_App.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.HomeMsg = "“GameCheats is dedicated to displaying cheats, walkthroughs, and \r\ntactics for video games. The database is user generated, but moderated by our editors. We offer this information as a \r\nservice. Use this information at your peril. We accept no responsibility for consequences of your using our information.”";
             return View();
+            
         }
 
         public IActionResult Privacy()
