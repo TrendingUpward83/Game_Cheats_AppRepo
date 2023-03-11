@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Game_Cheats_App.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\ChristinaSereday\\Game_Cheats_AppRepo\\Game_Cheats_App\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
       "Id": "C:\\Users\\ChristinaSereday\\Game_Cheats_AppRepo\\Game_Cheats_App\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

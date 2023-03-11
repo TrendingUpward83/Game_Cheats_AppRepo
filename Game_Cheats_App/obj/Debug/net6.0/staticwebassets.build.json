@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PxNRWTMhcbCZ+RuCU3RHm1TDXQOJgNsa/TKg2JfbzJ8=",
+  "Hash": "aso0lZcZ1z2iliuFYk2Wg+S/+ciU1bU9T0EnSXh5gUc=",
   "Source": "Game_Cheats_App",
   "BasePath": "_content/Game_Cheats_App",
   "Mode": "Default",
@@ -1069,6 +1069,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\ChristinaSereday\\Game_Cheats_AppRepo\\Game_Cheats_App\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Game_Cheats_App.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\ChristinaSereday\\Game_Cheats_AppRepo\\Game_Cheats_App\\wwwroot\\css\\bootstrap.min.css",
+      "SourceId": "Game_Cheats_App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ChristinaSereday\\Game_Cheats_AppRepo\\Game_Cheats_App\\wwwroot\\",
+      "BasePath": "_content/Game_Cheats_App",
+      "RelativePath": "css/bootstrap.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
     },
     {
       "Identity": "C:\\Users\\ChristinaSereday\\Game_Cheats_AppRepo\\Game_Cheats_App\\wwwroot\\css\\site.css",
