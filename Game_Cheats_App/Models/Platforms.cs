@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace Game_Cheats_App.Models
 {
@@ -7,6 +8,8 @@ namespace Game_Cheats_App.Models
         //these are properties and are going to become columns in the table.[Key] is required for each table and is denoting is the PK.
         [Key]
         public int PlatformId { get; set; }
+        [Required(ErrorMessage = "Your platform cannot be null")]
+        [DisplayName("Platform Name")]
         public string? PlatformName { get; set; } // The ? after type means it can be nullable
 
         //One platform can have many games, one game can have many platforms

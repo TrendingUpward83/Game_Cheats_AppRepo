@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Game_Cheats_App.Models.Platforms>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_Layout";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table d-lg-table-cell table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PlatformName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PlatformName)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.PlatformId" class="text-warning">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.PlatformId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.PlatformId" class="text-danger">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

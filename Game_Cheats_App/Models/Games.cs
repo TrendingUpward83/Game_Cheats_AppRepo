@@ -1,4 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 
 namespace Game_Cheats_App.Models
 {
@@ -6,6 +9,8 @@ namespace Game_Cheats_App.Models
     {
         [Key]
         public int GameId { get; set; }
+        [Required(ErrorMessage = "Please list the name of the game.")]
+        [DisplayName("Game Name")]
         public string? GameName { get; set; }
 
         //Relationships
@@ -19,10 +24,15 @@ namespace Game_Cheats_App.Models
         //Need foreign key for property Platform so that each game show's it's linked Platform- but I don't want Id's to show in my
         //views so....not sure what to do about that
 
+
         //Also is this overkill since the relationships are already set up? Can't I access this stuff later through the relationships?
+        [Required(ErrorMessage = "Please include the platform for this game (create new entry for each alternate platform)")]
+        [DisplayName("Game Platform Id")]
         public int? PlatformId { get; set; }
+
         [ForeignKey("PlatformId")]
-        public Platforms Platform { get; set; } //I hope I will be able to access/show Game properties by doing this...
+        public Platforms? Platform { get; set; } //I hope I will be able to access/show Game properties by doing this...
+
 
     }
 }
