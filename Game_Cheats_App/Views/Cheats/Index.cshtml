@@ -22,7 +22,10 @@
             <th>
                 @Html.DisplayNameFor(model => model.Game)
             </th>
-            <th></th>
+            <th>
+                @Html.DisplayNameFor(model => model.Game.Platform)
+
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -35,7 +38,10 @@
                 @Html.DisplayFor(modelItem => item.CheatDescription)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Game.GameId)
+                @Html.DisplayFor(modelItem => item.Game.GameName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Game.Platform)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.CheatId" class="text-warning">Edit</a> |
